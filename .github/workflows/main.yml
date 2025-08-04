@@ -6,7 +6,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: print build
-      - run: echo 'build'
+        run: echo 'build'
 
   test:
     runs-on: windows-latest
