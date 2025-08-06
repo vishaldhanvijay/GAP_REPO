@@ -1,1 +1,24 @@
+name: workflow for manual trigger
+on: 
+jobs:
 
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: print build
+        run: echo 'build'
+
+  test:
+    runs-on: windows-latest
+    steps:
+      - name: print test - chrome
+        run: echo 'test - chrome'
+      - name: print test - edge
+        run: echo 'test - edge'
+
+
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: print deploy
+        run: echo 'deploy'
