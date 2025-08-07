@@ -16,6 +16,15 @@ jobs:
          echo 'workflow name ${{github.workflow}}'
          echo 'Actor ${{github.actor}}'
          echo 'Ref detail ${{github.ref}}'
-         echo 'Trigger event ${{github.event}}'
+         echo 'Trigger event ${{github.event_name}}'
          echo 'Run Id ${{github.run_id}}'
          echo 'Runner Number ${{github.run_number}}'
+      - name: Examples
+        if: github.ref = 'refs/heads/main'
+        run: echo 'deploy'
+          
+        run: echo 'Trigger the workflow'
+         
+         
+         
+         '
