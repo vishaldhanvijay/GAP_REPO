@@ -1,12 +1,13 @@
-name: github context
+name: Github Context
 
-on: workflow_dispatch
+on: 
+ workflow_dispatch
 
 jobs:
   github_context:
     runs-on: ubuntu-latest
     steps:
-      - name: print info about github
+      - name: Print info about Github
         run: |
          echo: 'Repository details ${{github.repository}}'
          echo: 'Repo id ${{github.id}}' 
