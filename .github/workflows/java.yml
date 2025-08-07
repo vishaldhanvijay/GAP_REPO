@@ -1,10 +1,10 @@
-name: action workflow java setup
+name: java setup
 
 on: workflow_dispatch
 
 jobs: 
   java-setup:
-   runs-on: ubuntu-lattest
+   runs-on: ubuntu-latest
    steps:
      - name: Setup Java JDK 
        uses: actions/setup-java@v3.14.1
