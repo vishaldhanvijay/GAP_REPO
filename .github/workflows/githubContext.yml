@@ -1,0 +1,14 @@
+name: github context
+
+on: workflow_dispatch
+
+jobs:
+  github_context:
+    runs-on: ubuntu-latest
+    steps:
+      - name: print info about github
+        run: |
+         echo: 'Repository details ${{github.repository}}'
+         echo: 'Repo url ${{github.repositoryUrl}}' 
+         echo: 'Repo token ${{github.token}}'
+         echo: 'workflow name ${{github.workflow}}'
