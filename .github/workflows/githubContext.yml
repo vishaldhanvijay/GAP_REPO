@@ -22,7 +22,10 @@ jobs:
       - name: Examples
         if: github.ref = 'refs/heads/main'
         run: echo 'deploy'
-          
+       
+      - name: Triggered by pull request
+ 
+        if: github.event_name == 'pull_request'  
         run: echo 'Trigger the workflow'
          
          
