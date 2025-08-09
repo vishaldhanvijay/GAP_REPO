@@ -1,16 +1,19 @@
-name: variable
+name: Variable
 
-on: 
-  workflow_dispatch
+on:
+ workflow_dispatch
 env:
-  MY_VAR: workflow
+ MY_VAR: workflow
 jobs:
  variables:
-     env:
-      MY_VAR: jobs
-     steps:
-       - name: print
-         run: echo ' ${{env.MY_VAR}}'
-         env:
-          MY_VAR: steps
+  env:
+   MY_VAR: jobs
+  runs-on: ubuntu-latest
+  steps:
+  - name: Print
+    run: |
+     echo ' ${{secrets.PASSWORD}}'
+    env:
+     MY_VAR: steps
+  
   
