@@ -1,8 +1,8 @@
 
-name: fschedule workflow
+name: schedule workflow
 on: 
   schedule:
-    - cron: '50 4 1 2 *'
+    - cron: '50 4 1 2 1'
 jobs:
 
   build:
