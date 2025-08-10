@@ -1,6 +1,6 @@
 name: Output workflow
 
-on: push
+on: workflow_dispatch
 
 jobs: 
  # outputs:
