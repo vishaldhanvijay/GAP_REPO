@@ -7,8 +7,8 @@ jobs:
   matrix-jobs:
     runs-on: ${{matrix.os}}
     strategy:
+      fail-fast: false
       matrix:
-      ffail-fast: false
        os:
        - ubuntu-latest
        - windows-latest
